@@ -1,0 +1,28 @@
+@use "../layout";
+
+.event__card {
+  @extend %flex-col;
+  justify-content: space-between;
+  gap: var(--space);
+  background-color: var(--gray-85);
+
+  &__details {
+    @extend %flex-col;
+
+    h2 {
+      font-weight: 600;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__media {
+    @extend %flex-row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__art {
+    max-width: 80%;
+  }
+}
