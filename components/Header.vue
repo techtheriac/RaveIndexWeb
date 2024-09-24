@@ -4,7 +4,6 @@
       <h1>Rave</h1>
       <h1>Index</h1>
     </div>
-    <Navigation />
   </header>
 </template>
 

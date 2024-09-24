@@ -1,5 +1,5 @@
 <template>
-  <h1>Asshole</h1>
+  <FeaturedEvents />
 </template>
 
 <style></style>
