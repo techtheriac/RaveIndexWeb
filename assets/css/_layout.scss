@@ -1,0 +1,21 @@
+%flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.fill-height {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.layout-base {
+  padding: 0 0.6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

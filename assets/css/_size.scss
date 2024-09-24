@@ -1,0 +1,38 @@
+@use "interpolate";
+
+$interpolate-min: 350px;
+$interpolate-max: 1280px;
+
+:root {
+  @include interpolate.map(
+    --space,
+    $interpolate-min,
+    $interpolate-max,
+    25px,
+    40px
+  );
+
+  @include interpolate.map(
+    --idealBaseFontSize,
+    $interpolate-min,
+    $interpolate-max,
+    12px,
+    16px
+  );
+
+  @include interpolate.map(
+    --idealSubFontSize,
+    $interpolate-min,
+    $interpolate-max,
+    12px,
+    14px
+  );
+
+  & {
+    --space-1: calc(var(--space) * 2);
+    --space-2: calc(var(--space-1) * 2);
+    --space-3: calc(var(--space-2) * 2);
+    --space--1: calc(var(--space) / 2);
+    --space--2: calc(var(--space--1) / 2);
+  }
+}
